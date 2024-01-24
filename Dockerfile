@@ -6,3 +6,4 @@ COPY ./target/multi_peru_5-1.0-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
 
 ENTRYPOINT ["java","-jar","multi_peru_5-1.0-SNAPSHOT.jar"]
+
