@@ -11,7 +11,7 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'VERSION', choices: ['1.0.1', '1.0.2', '1.0.3'], description: '')
+        choice(name: 'VERSION', choices: ['1.0.0', '1.0.1', '1.0.2'], description: '')
     }
 
     stages {
@@ -40,7 +40,7 @@ pipeline {
                 // Add your build commands here
                 script {
                 //    gv.buildImage()
-                      buildImage()
+                      buildImage 'fnogueira2023/multi_peru_5:1.1'
                 }
             }
         }
