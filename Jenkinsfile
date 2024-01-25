@@ -29,7 +29,7 @@ pipeline {
                 // Add your build commands here
                 script {
                 //    gv.buildApp()
-                      buildJar()
+                      buildJar 'fnogueira2023/multi_peru_5:'
                 }
             }
         }
