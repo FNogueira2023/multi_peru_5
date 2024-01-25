@@ -40,7 +40,7 @@ pipeline {
                 // Add your build commands here
                 script {
                 //    gv.buildImage()
-                      buildImage()
+                      buildImage 'fnogueira2023/multi_peru_5:1.0'
                 }
             }
         }
