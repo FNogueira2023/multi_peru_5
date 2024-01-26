@@ -40,7 +40,11 @@ pipeline {
                 // Add your build commands here
                 script {
                 //    gv.buildImage()
-                      buildImage 'fnogueira2023/multi_peru_5:1.1'
+                //      buildImage 'fnogueira2023/multi_peru_5:1.1'
+
+                    buildImage 'fnogueira2023/multi_peru_5:1.2'
+                    dockerLogin()
+                    dockerPush 'fnogueira2023/multi_peru_5:1.2'
                 }
             }
         }
